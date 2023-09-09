@@ -1,0 +1,80 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://img.freepik.com/foto-gratis/vista-posterior-programador-trabajando-toda-noche_1098-18697.jpg?w=826&t=st=1694209514~exp=1694210114~hmac=3b3235adefefc5abe5941a73b97d4cef848e5e3941dfde15fa1754887f66e527');
+  background-color: #333;
+}
+
+
+.text-container {
+  text-align: center;
+}
+
+
+.intro-text {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.text-4xl {
+  font-size: 2.5rem;
+  color: #FF5722;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.animate-slide-in-left-opacity {
+  animation: slideInLeftOpacity 2s ease-in-out;
+}
+
+.text-welcome{
+color: black;
+}
+@keyframes slideInLeftOpacity {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.text-6xl {
+  font-size: 4rem;
+  color: #e5e767;
+  animation: scaleUp 2s ease-in-out;
+}
+
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
